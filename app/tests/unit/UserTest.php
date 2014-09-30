@@ -75,6 +75,7 @@ class UserTest extends TestCase {
         // There should be 1 error
         $errors = $this->_getNumberOfErrors($user, 1);
         $this->assertEquals($errors[0], "The firstname field is required.");
+        $this->assertEquals($errors[0], "The firstname Edit field is required.");
     }
 
     public function testLastnameIsRequired()
